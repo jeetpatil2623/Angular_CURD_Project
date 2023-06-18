@@ -1,0 +1,26 @@
+<!-- This is Template in that register data is  show -->
+
+<h3>All Employees</h3>
+<table border="1"  class="center">
+    <tr>
+        <td>Sr.No</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Contact No</td>
+        <td>Address</td>
+        <td>DeleteEmployee</td>
+        <td>Edit Details</td>
+        
+    </tr>
+    <tr *ngFor="let employee of allEmployees, let i=index">
+        <td>{{i+1}}</td>
+        <td>{{employee.firstname}}</td>
+        <td>{{employee.lastname}}</td>
+        <td> {{employee.contactno}}</td>
+        <td>{{employee.address}}</td>
+      <td> <button (click)="deleteEmp(employee.id)">Delete</button></td>
+
+      <td><button (click)="edit(employee.id)">Edit</button></td> 
+  
+    </tr>
+</table>

@@ -1,0 +1,26 @@
+<!-- In this I have use selectors of compnents to display compontents -->
+
+<app-header></app-header>
+
+<div *ngIf="WhatToShow!=4 && WhatToShow!=3"  >
+  <button  class="button button2" [disabled]="WhatToShow==1" (click)="show(1)"  >
+    Register Employee
+  </button>
+  <button class="button button2" [disabled]="WhatToShow==2" (click)="show(2)" style="margin-left: 10px;">
+    Show Employees
+  </button>
+</div>
+
+<div *ngIf="WhatToShow==1">
+ <app-register-emp></app-register-emp>
+</div>
+<div *ngIf="WhatToShow==2">
+    <app-show-employees></app-show-employees>
+</div>
+
+<div *ngIf="WhatToShow==3">
+  <app-edit-emp></app-edit-emp>
+</div>
+
+
+<app-footer></app-footer>

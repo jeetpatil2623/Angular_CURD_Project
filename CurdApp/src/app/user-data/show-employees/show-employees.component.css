@@ -1,0 +1,39 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.delete-button, .edit-button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #f44336;
+    color: rgb(6, 3, 3);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+}
